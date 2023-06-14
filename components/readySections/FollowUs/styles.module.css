@@ -1,0 +1,19 @@
+.border {
+  width: 35px;
+  height: 35px;
+  font-size: inherit;
+  border: 3px solid;
+  border-radius: 10px;
+
+  transform: rotate(45deg);
+  margin: 8px;
+  margin-right: 12px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.noRotate {
+  transform: rotate(-45deg);
+}

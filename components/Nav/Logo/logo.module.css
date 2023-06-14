@@ -1,0 +1,21 @@
+.logo {
+  width: 35px;
+  height: 35px;
+  font-size: inherit;
+  border: 3px solid;
+  border-radius: 2px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rotate {
+  transform: rotate(45deg);
+  margin: 8px;
+  margin-right: 12px;
+}
+
+.noRotate {
+  transform: rotate(-45deg);
+}
