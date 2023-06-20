@@ -30,7 +30,6 @@ export default function Home({articles}: {articles: Article[]}) {
       <Head>
         <title>Blog - recent posts</title>
       </Head>
-
       <div className="flex flex-row px-10">
         <section className="md:basis-5/7 mb-10 md:border-r border-solid border-black">
           <h1 className="py-14 text-3xl font-bold uppercase border-b border-solid border-black">

@@ -3,6 +3,7 @@ import Image from 'next/image';
 
 import ButtonBack from 'components/ButtonBack/ButtonBack';
 import Layout from 'components/Layout';
+import notify from 'components/notification/notification';
 import playChessImg from 'public/playChess.jpg';
 
 export default function Contact() {
@@ -29,7 +30,9 @@ export default function Contact() {
         </div>
 
         <div className="flex justify-center mt-16 mb-8">
-          <button className="flex items-center px-14 py-3 font-bold text-xl border-2 border-solid border-black rounded-md hover:bg-teal-400">
+          <button
+            onClick={notify}
+            className="flex items-center px-14 py-3 font-bold text-xl border-2 border-solid border-black rounded-md hover:bg-teal-400">
             Write an email
           </button>
         </div>

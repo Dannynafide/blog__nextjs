@@ -1,3 +1,5 @@
+import notify from 'components/notification/notification';
+
 export default function JoinMailingList() {
   return (
     <div className="my-10">
@@ -8,7 +10,9 @@ export default function JoinMailingList() {
           type="text"
           aria-label="Your email"
           placeholder="Your email..."></input>
-        <button className="rounded p-2 px-5 bg-teal-500 text-white font-bold">
+        <button
+          onClick={notify}
+          className="rounded p-2 px-5 bg-teal-500 text-white font-bold">
           JOIN
         </button>
       </div>
