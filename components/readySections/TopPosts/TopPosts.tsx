@@ -12,7 +12,7 @@ type Article = {
 
 export default function TopPosts({articles}: {articles: Article[]}) {
   return (
-    <div>
+    <section>
       <p className="text-2xl font-bold uppercase">Top posts</p>
       {articles.map((article, idx) => (
         <div
@@ -43,6 +43,6 @@ export default function TopPosts({articles}: {articles: Article[]}) {
           </div>
         </div>
       ))}
-    </div>
+    </section>
   );
 }

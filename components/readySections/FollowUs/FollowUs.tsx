@@ -3,7 +3,7 @@ import {FaFacebookF, FaInstagram, FaTwitter} from 'react-icons/fa';
 import styles from './styles.module.css';
 export default function FollowUs() {
   return (
-    <div>
+    <section>
       <p className="mb-2 font-bold ">Follow us</p>
       <div className="flex text-teal-500 text-xl">
         <span className={styles.border + ' text-sky-600'}>
@@ -22,6 +22,6 @@ export default function FollowUs() {
           </span>
         </span>
       </div>
-    </div>
+    </section>
   );
 }

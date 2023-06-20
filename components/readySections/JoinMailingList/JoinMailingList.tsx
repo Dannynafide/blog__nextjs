@@ -2,7 +2,7 @@ import notify from 'components/notification/notification';
 
 export default function JoinMailingList() {
   return (
-    <div className="my-10">
+    <section className="my-10">
       <p className="mb-2 text-lg font-bold">Join our mailing list</p>
       <div className="flex flex-wrap gap-5  ">
         <input
@@ -16,6 +16,6 @@ export default function JoinMailingList() {
           JOIN
         </button>
       </div>
-    </div>
+    </section>
   );
 }
