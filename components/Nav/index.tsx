@@ -1,2 +1,2 @@
-export {default as Logo} from './Logo/Logo';
+export {default as Logo, LogoIcon} from './Logo/Logo';
 export {default} from './Nav';
