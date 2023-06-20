@@ -1,6 +1,7 @@
 import {FaFacebookF, FaInstagram, FaTwitter} from 'react-icons/fa';
 
 import styles from './styles.module.css';
+
 export default function FollowUs() {
   return (
     <section>
