@@ -2,6 +2,7 @@ import {GetStaticProps} from 'next';
 import Head from 'next/head';
 import {ParsedUrlQuery} from 'querystring';
 
+import ButtonBack from '@/components/ButtonBack/ButtonBack';
 import Layout from 'components/Layout';
 import {getArticle, getListOfArticles} from 'services/articles';
 
@@ -43,7 +44,8 @@ export default function Article({article}: {article: Article}) {
         <title>{article.title}</title>
       </Head>
       <div className="px-10">
-        <h1 className="py-14 text-3xl font-bold text-center">
+        <ButtonBack />
+        <h1 className="pt-6 pb-14 text-3xl font-bold text-center">
           {article.title}
         </h1>
         <div
