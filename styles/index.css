@@ -19,8 +19,25 @@ body {
 }
 
 /* Write your own custom component styles here */
-.btn-blue {
-  @apply px-4 py-2 font-bold text-white bg-blue-500 rounded;
+.bg-gradient {
+  background: linear-gradient(
+    0deg,
+    rgba(204, 251, 241, 1) 0%,
+    rgba(249, 250, 251, 1) 100%
+  );
+}
+
+.about-page__main-image {
+  border-radius: 5px 5px 0px 0px;
+  margin-left: 20px;
+  transform: perspective(300px) rotateX(2deg) rotateY(1deg);
+  transform-origin: left bottom;
+}
+
+.contact-page__main-image {
+  width: 100%;
+  transform: skewY(2deg);
+  transform-origin: left bottom;
 }
 
 /* Start purging... */

@@ -4,8 +4,8 @@ import styles from './styles.module.css';
 export default function FollowUs() {
   return (
     <div>
-      <p className="mb-2 font-bold">Follow us</p>
-      <div className="flex text-teal-500">
+      <p className="mb-2 font-bold ">Follow us</p>
+      <div className="flex text-teal-500 text-xl">
         <span className={styles.border + ' text-sky-600'}>
           <span className={styles.noRotate + ' text-teal-400'}>
             <FaFacebookF />

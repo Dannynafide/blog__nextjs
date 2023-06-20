@@ -5,7 +5,7 @@ import Logo from './Logo/Logo';
 const navLinks = [
   {id: 1, path: '/', label: 'BLOG'},
   {id: 2, path: '/about', label: 'ABOUT'},
-  {id: 3, path: '/projects', label: 'CONTACT'},
+  {id: 3, path: '/contact', label: 'CONTACT'},
 ];
 
 export default function Nav() {
