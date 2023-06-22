@@ -13,13 +13,13 @@ type Article = {
 export default function Article({article}: {article: Article}) {
   return (
     <div className="py-10 flex-col border-b border-solid border-black">
-      <div className="flex">
+      <div className="flex flex-col items-center text-center sm:text-left sm:flex-row sm:items-stretch">
         <Image
           src={article.cover}
           alt="Blog Cover"
           width={300}
           height={200}
-          className={'object-cover rounded-lg'}
+          className={'object-cover rounded-lg mb-4 sm:mb-0'}
           style={{width: '200px', height: 'auto'}}
           priority={true}
           quality={75}
@@ -54,7 +54,9 @@ export default function Article({article}: {article: Article}) {
           </div>
 
           <div className="text-xs font-medium text-gray-500 flex flex-row-reverse">
-            {new Date(article.date).toLocaleDateString('pl-PL')}
+            {new Date(article.date.replace(/-/g, '/')).toLocaleDateString(
+              'pl-PL'
+            )}
           </div>
         </div>
       </div>

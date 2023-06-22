@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-import Logo from './Logo/Logo';
+import {default as Logo, LogoIcon} from './Logo/Logo';
 
 const navLinks = [
   {id: 1, path: '/', label: 'BLOG'},
@@ -10,9 +10,10 @@ const navLinks = [
 
 export default function Nav() {
   return (
-    <nav className="font-bold flex gap-7 items-baseline">
+    <nav className="font-bold flex md:gap-7 items-baseline">
       <Link href={'/'} className="hover:text-teal-500">
-        {<Logo />}
+        <span className="hidden md:inline">{<Logo />}</span>
+        <span className="md:hidden">{<LogoIcon />}</span>
       </Link>
 
       {navLinks.map((link) => (
